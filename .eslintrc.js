@@ -21,5 +21,13 @@ module.exports = {
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
         'prettier/prettier': ['error']
-    }
+    },
+    overrides: [
+        {
+            files: ['**/*.test.ts', '**/*.test.js'],
+            env: {
+                jest: true
+            }
+        }
+    ]
 };

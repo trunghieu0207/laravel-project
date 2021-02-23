@@ -1,11 +1,12 @@
+const js_dir = './resources/js';
+
 // eslint-disable-next-line no-undef
 module.exports = {
-    roots: ['<rootDir>/resources'],
-    testMatch: [
-        '**/__tests__/**/*.+(ts|tsx|js)',
-        '**/?(*.)+(spec|test).+(ts|tsx|js)'
-    ],
+    testMatch: ['**/__tests__/**/*.+(ts|tsx|js)'],
     transform: {
-        '^.+\\.(ts|tsx)$': 'ts-jest'
-    }
+        '^.+\\.(ts|tsx)$': 'ts-jest',
+        '^.+\\.(js|jsx)$': 'babel-jest'
+    },
+    collectCoverageFrom: [`!${js_dir}/*.{js,ts}`],
+    modulePathIgnorePatterns: ['<rootDir>/public/ts']
 };

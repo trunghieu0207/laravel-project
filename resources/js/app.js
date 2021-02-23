@@ -1,4 +1,4 @@
 require('./bootstrap');
-const helloWorld = require('./demo-js/hello-world').helloWorld();
+const helloWorld = require('./demo-js/ts/hello-world').helloWorld();
 
 console.log(helloWorld);
