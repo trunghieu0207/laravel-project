@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  run-test:
+    docker:
+      - image: circleci/node:8.10
+    step:
+      - checkout
+      - run: npm install
+      - run: npm run test
+workflows:
+  version: 2
+  run-jobs:
+    jobs:
+      - run-test
