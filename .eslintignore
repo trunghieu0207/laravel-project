@@ -1,5 +1,4 @@
 node_modules
 public/js/app.js
-public/js/*.js
 resources/js/app.js
 resources/js/bootstrap.js
