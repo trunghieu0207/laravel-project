@@ -20,7 +20,9 @@ module.exports = {
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
-        'prettier/prettier': ['error']
+        'prettier/prettier': ['error'],
+        '@typescript-eslint/no-non-null-assertion': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off'
     },
     overrides: [
         {

@@ -48,7 +48,9 @@ export default class UserList {
         const userEl = document.querySelector(userClass);
         const userNameElement = userEl!.querySelector('.user-name');
         const newInputElement = document.createTextNode('input');
-        userNameElement!.replaceChild(newInputElement, userNameElement);
+        if (userNameElement) {
+            userNameElement!.replaceChild(newInputElement, userNameElement);
+        }
     }
 
     render(): void {
