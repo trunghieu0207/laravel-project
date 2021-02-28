@@ -2,3 +2,5 @@ node_modules
 public/js/app.js
 resources/js/app.js
 resources/js/bootstrap.js
+public/js/common/*.js
+public/js/**/index.js

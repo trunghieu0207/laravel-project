@@ -19,3 +19,4 @@ workflows:
   run-jobs:
     jobs:
       - run-test
+      - run-lint
